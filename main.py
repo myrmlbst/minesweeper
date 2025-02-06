@@ -68,6 +68,7 @@ class Minesweeper:
 
                 if x < 0 or y < 0 or x >= self.width or y >= self.height:
                     raise ValueError
+                
                 if not self.reveal(x, y):
                     self.print_board(reveal=True)
                     print("Game Over! You hit a mine.")
